@@ -1,23 +1,28 @@
 {
   "name": "read-xlsx-and-calc-work-hours",
   "private": true,
+  "author": {
+    "name": "ModyQyW",
+    "email": "wurui-dev@foxmail.com",
+    "url": "https://github.com/ModyQyW"
+  },
   "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^2.12.0",
+    "read-excel-file": "^5.7.1"
   },
   "devDependencies": {
     "@vueuse/core": "^10.7.1",
     "@vueuse/nuxt": "^10.7.1",
-    "nuxt": "^3.9.0",
-    "vue": "^3.4.6",
+    "nuxt": "^3.9.1",
+    "vue": "^3.4.7",
     "vue-router": "^4.2.5"
-  },
-  "dependencies": {
-    "@nuxt/ui": "^2.11.1",
-    "read-excel-file": "^5.7.1"
   }
 }
