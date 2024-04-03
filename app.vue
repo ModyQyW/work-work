@@ -41,7 +41,7 @@ const handleFileInputChange = (event: Event) => {
         type="file"
         multiple
         accept=".xlsx"
-        @change="handleFileInputChange"
+        @input="handleFileInputChange"
       ></UInput>
       <div class="mt-4"></div>
       <p>You have uploaded {{ files.length }} files.</p>
