@@ -46,6 +46,7 @@ const handleFileInputChange = (event: Event) => {
       <div class="mt-4"></div>
       <p>You have uploaded {{ files.length }} files.</p>
       <ul class="list-disc pl-4">
+        <li>Total: {{ list.reduce((acc, cur) => acc + cur.count, 0) }}h</li>
         <li v-for="item of list" :key="item.name">
           {{ item.name }} - {{ item.count }}h
         </li>
