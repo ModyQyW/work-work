@@ -1,4 +1,8 @@
-# Read XLSX and Calc Work Hours
+# Work! Work
+
+![Work! Work!](https://liza.io/images/2012/04/workwork.png)
+
+![Okie dokie](https://p2.itc.cn/q_70/images03/20210315/ecd263d74f0d47869bbb0f01958ffed3.gif)
 
 **For my personal usage. Use at your own risk.**
 
@@ -8,9 +12,4 @@
 - [nuxt ui](https://ui.nuxt.com/)
 - [read-excel-file](https://gitlab.com/catamphetamine/read-excel-file)
 
-Online demo hosted on:
-
-- [Cloudflare](https://modyqyw-read-xlsx-and-calc-work-hours.pages.dev)
-- [Netlify](https://modyqyw-read-xlsx-and-calc-work-hours.netlify.app/)
-- [Vercel](https://modyqyw-read-xlsx-and-calc-work-hours.vercel.app/)
-- [Zeabur](https://modyqyw-read-xlsx-and-calc-work-hours.zeabur.app/)
+Online demo [here](https://work-work.modyqyw.top).
