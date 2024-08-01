@@ -15,15 +15,15 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
-    "@nuxt/ui": "^2.16.0",
-    "read-excel-file": "^5.8.1"
+    "@nuxt/ui": "^2.18.3",
+    "read-excel-file": "^5.8.4"
   },
   "devDependencies": {
-    "@vueuse/core": "^10.10.0",
-    "@vueuse/nuxt": "^10.10.0",
-    "nuxt": "^3.11.2",
-    "vue": "^3.4.27",
-    "vue-router": "^4.3.2"
+    "@vueuse/core": "^10.11.0",
+    "@vueuse/nuxt": "^10.11.0",
+    "nuxt": "^3.12.4",
+    "vue": "^3.4.35",
+    "vue-router": "^4.4.2"
   },
-  "packageManager": "pnpm@9.2.0"
+  "packageManager": "pnpm@9.6.0"
 }
