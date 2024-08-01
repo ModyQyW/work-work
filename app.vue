@@ -24,7 +24,6 @@ const list = computedAsync(
   []
 );
 const handleFileInputChange = (event: Event) => {
-  // @ts-expect-error missing types
   files.value = [...(event.target!.files ?? [])];
 };
 </script>
