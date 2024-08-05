@@ -39,7 +39,7 @@ const list = computedAsync(
   []
 );
 const handleFileInputChange = (event: Event) => {
-  files.value = [...(event.target!.files ?? [])];
+  files.value = [...((event.target as HTMLInputElement).files ?? [])];
 };
 </script>
 
