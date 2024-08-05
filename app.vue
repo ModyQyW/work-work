@@ -45,10 +45,26 @@ const handleFileInputChange = (event: Event) => {
 
 <template>
   <UContainer class="p-20">
-    <header>
-      <h1 class="text-2xl font-medium text-center">
-        Read XLSX and Calculate Work Hours
-      </h1>
+    <header class="text-center">
+      <h1 class="text-3xl font-medium">Read XLSX and Calculate Work Hours</h1>
+      <p>
+        Supports XLSX exported from YesDev
+        <UButton
+          to="https://www.yesdev.cn/platform/week/schedule"
+          target="_blank"
+          variant="link"
+        >
+          Schedules
+        </UButton>
+        and
+        <UButton
+          to="https://www.yesdev.cn/platform/projectManagement/queryTasks"
+          target="_blank"
+          variant="link"
+        >
+          Query Tasks
+        </UButton>
+      </p>
     </header>
     <main class="mt-12 max-w-[512px] mx-auto w-4/5">
       <UInput
