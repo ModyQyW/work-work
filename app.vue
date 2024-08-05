@@ -6,15 +6,30 @@ const list = computedAsync(
   async () =>
     await Promise.all(
       files.value.map(async (f: File) => {
-        const count = await readXlsxFile(f).then((rows) =>
-          rows
+        const count = await readXlsxFile(f).then((rows) => {
+          if (rows[0].some((cell) => cell.toString().toLowerCase() === "id")) {
+            const index = rows[0].findIndex((cell) => {
+              const value = cell.toString();
+              return value.includes("工时") || value.includes("小时");
+            });
+            return rows
+              .slice(1)
+              .map((row) => row[index])
+              .filter(Boolean)
+              .reduce(
+                (acc: number, cur) => acc + Number.parseFloat(cur.toString()),
+                0
+              );
+          }
+          return rows
             .flat(Number.POSITIVE_INFINITY)
-            .filter((cell) => cell?.toString().includes("小时"))
+            .filter(Boolean)
+            .filter((cell) => cell.toString().includes("小时"))
             .flatMap((cell) => cell.toString().match(/\s*\d+\.\d+小时\s*/g))
             .filter((value): value is string => !!value)
             .map((string) => Number.parseFloat(string.trim().slice(0, -2)))
-            .reduce((acc, cur) => acc + cur)
-        );
+            .reduce((acc, cur) => acc + cur);
+        });
         return {
           name: f.name,
           count,
